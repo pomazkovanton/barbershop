@@ -1,2 +1,19 @@
-header
-  p Header
+header.main-header
+  nav.main-nav
+    a.logo-index(href="index.html")
+      svg
+        use(xlink:href="img/sprite.svg#logo-index")
+    ul.site-nav
+      li.site-nav__item
+        a.site-nav__link(href="blank.html") Информация
+      li.site-nav__item
+        a.site-nav__link(href="blank.html") Новости
+      li.site-nav__item
+        a.site-nav__link(href="price.html") Прайс-лист
+      li.site-nav__item
+        a.site-nav__link(href="catalog.html") Магазин
+      li.site-nav__item
+        a.site-nav__link(href="blank.html") Контакты
+    ul.user-nav
+      li.user-nav__item
+        a.user-nav__link(href="#") Вход
