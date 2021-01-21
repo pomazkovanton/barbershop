@@ -6,11 +6,3 @@
 
 @import "./utils/fonts";
 
-header {
-    width: 530px;
-    background-color: red;
-
-    @include media-tablet {
-        width: 500px;
-    }
-}
