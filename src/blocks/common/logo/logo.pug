@@ -1,0 +1,12 @@
+include ../icon/icon
+  
+mixin logo()
+    -const path  = attributes.path
+    -const name  = attributes.name
+
+    if path
+        a(href=path)
+            +icon(name)
+    else 
+        a
+            +icon(name)

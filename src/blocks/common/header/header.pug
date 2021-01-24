@@ -1,19 +1,11 @@
-header.main-header
+include ../logo/logo
+include ../site-nav/site-nav
+- var nav = [{url: '/blank.html', name: 'Информация'}, {url: 'blank.html', name: 'Новости'}, {url: 'price.html', name: 'Прайс-лист'}, {url: 'catalog.html', name: 'Магазин'}, {url: 'blank.html', name: 'Контакты'}];
+
+header
   nav.main-nav
-    a.logo-index(href="index.html")
-      svg
-        use(xlink:href="img/sprite.svg#logo-index")
-    ul.site-nav
-      li.site-nav__item
-        a.site-nav__link(href="blank.html") Информация
-      li.site-nav__item
-        a.site-nav__link(href="blank.html") Новости
-      li.site-nav__item
-        a.site-nav__link(href="price.html") Прайс-лист
-      li.site-nav__item
-        a.site-nav__link(href="catalog.html") Магазин
-      li.site-nav__item
-        a.site-nav__link(href="blank.html") Контакты
+    +logo(path="/index.html", name='logo-big')
+    +ul(nav)
     ul.user-nav
       li.user-nav__item
         a.user-nav__link(href="#") Вход
